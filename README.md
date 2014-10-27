@@ -6,10 +6,10 @@ This widget is a cutomized version of the Android ProgressBar.  It provides deve
 
 * Increase or decrease progress changes
 * Modifiable
-** Ring width
-** Ring background color
-** Ring fill color
-** Ring gradient
+ * Ring width
+ * Ring background color
+ * Ring fill color
+ * Ring gradient
 
 # Requirements
 
