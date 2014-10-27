@@ -1,2 +1,2 @@
-Android Cirle Progress Indicator
+Android Circle Progress Indicator
 =============================
