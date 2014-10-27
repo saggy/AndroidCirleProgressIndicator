@@ -17,9 +17,9 @@ Compatible with all versions of the Android operating system
 
 # Configuration
 
-The progress ring is defined in /res/drawable/circle_progress_foreground.xml.  The developer can modify the ring thickness inside the code(<shape>) tags:
+The progress ring is defined in /res/drawable/circle_progress_foreground.xml.  The developer can modify the ring thickness inside the applicable tags:
 
-code(
+'''XML
 <shape
 	android:innerRadius="@dimen/sixty_dp"
 	android:shape="ring"
@@ -31,7 +31,7 @@ code(
     android:type="sweep" />   
 
 </shape>
-)
+'''
 
 * innerRadius defines the size of the hole inside the ring (in dp)
 * thickness defines the width of the bar that goes around the outside of the ring (in dp)
@@ -45,7 +45,7 @@ The developer can also modify the background ring (in this screen shot, the gray
 
 To use this in your application, just add two progress bars in your layout.xml on top of each other.  Set the background on the first one to circle_progress_background, and the background on the second to circle_progress_foreground:
 
-code(
+'''XML
 <ProgressBar
 		style="?android:attr/progressBarStyleHorizontal"
 		android:layout_width="match_parent"
@@ -66,19 +66,19 @@ code(
 		android:rotation="-90"
 		android:indeterminate="false"
 		android:progressDrawable="@drawable/circle_progress_foreground" />
-)
+'''
 
 *Note: the foreground progress bar android:rotation tag needs to be set to -90 to start the progress at 0*
 
 Inside the activity, declare the ProgressBar you've defined as the foreground circle, and set it's progress:
 
-code(
+'''Java
 @AndroidView(R.id.circle_progress_bar)
 private ProgressBar mProgress;	
 
 ...
 mProgress.setProgress(65);
-)
+'''
 
 That's all it takes!!
 
