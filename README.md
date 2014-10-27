@@ -36,7 +36,7 @@ The progress ring is defined in /res/drawable/circle_progress_foreground.xml.  T
 * innerRadius defines the size of the hole inside the ring (in dp)
 * thickness defines the width of the bar that goes around the outside of the ring (in dp)
 * startColor/endColor defines the beginning and ending colors of the gradient as it travels around the ring
-** the operating system transitions the between colors for you
+ * the operating system transitions the between colors for you
 * sweep defines the type of gradient
 
 The developer can also modify the background ring (in this screen shot, the gray ring).  It is defined (with same tags) in /res/drawable/circle_progress_background.xml.
